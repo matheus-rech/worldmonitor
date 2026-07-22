@@ -1,8 +1,18 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "types": ["vite/client"]
+    "types": [
+      "vite/client"
+    ],
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
-  "include": ["api", "src/generated", "server"],
-  "exclude": ["server/__tests__/**"]
+  "include": [
+    "api",
+    "src/generated",
+    "server"
+  ],
+  "exclude": [
+    "server/__tests__/**"
+  ]
 }
